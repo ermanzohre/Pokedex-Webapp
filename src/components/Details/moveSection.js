@@ -3,7 +3,7 @@ import { StyledGrid, MoveBox, MoveName, SectionTitle } from "./styled";
 
 const MoveList = ({ moves }) => (
     <>
-        <SectionTitle variant="h6">Moves:</SectionTitle>
+        <SectionTitle variant="h6">Moves</SectionTitle>
         <StyledGrid container spacing={2}>
             {moves
                 .filter(({ move }) => move?.accuracy !== null)

@@ -1,4 +1,5 @@
 import { CircularProgress } from "@mui/material";
+import ScrollToTop from "../ScrollToTop";
 import { DetailsContainer, PokemonName, BackButton } from "./styled";
 import TypeList from "./typeSection";
 import MoveList from "./moveSection";
@@ -29,6 +30,7 @@ const PokemonDetails = ({ pokemon, loading, error, onBackClick }) => {
             <PokemonName variant="h3">{pokemon?.name}</PokemonName>
             <TypeList types={pokemon?.pokemon_v2_pokemontypes || []} />
             <MoveList moves={pokemon?.moves || []} />
+            <ScrollToTop />
         </DetailsContainer>
     );
 };

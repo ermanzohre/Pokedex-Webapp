@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { GET_POKEMONS_BY_TYPE } from "../../graphql/queries";
 import usePokemonStore from "../../store/pokemonStore";
 import LoadingSpinner from "../LoadingSpinner";
+import ScrollToTop from "../ScrollToTop";
 import { StyledPokemonListContainer, StyledPokemonCard, StyledPokemonName, StyledMessage } from "./styled";
 
 const PokemonList = () => {
@@ -33,6 +34,7 @@ const PokemonList = () => {
                     </CardContent>
                 </StyledPokemonCard>
             ))}
+            <ScrollToTop />
         </StyledPokemonListContainer>
     );
 };

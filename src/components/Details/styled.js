@@ -7,17 +7,19 @@ export const DetailsContainer = styled(Box)`
     padding: 24px;
     background-color: #f7f9fc;
     border-radius: 16px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 `;
 
 export const BackButton = styled(Button)`
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    align-self: flex-start;
+    margin-bottom: 16px;
+    width: auto;
+
     @media (max-width: 600px) {
         width: 100%;
-        margin-bottom: 16px;
-        position: static;
     }
 `;
 
