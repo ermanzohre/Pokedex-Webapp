@@ -48,20 +48,24 @@ To get started with the Pokedex App, follow these steps:
 
 ```
 
+
 ## Project Structure
 
+```plaintext
 pokedex-app/
-├── public/ # Static files (favicon, images, etc.)
+├── public/              # Static files (favicon, images, etc.)
 ├── src/
-│ ├── components/ # Reusable UI components
-│ ├── graphql/ # GraphQL queries and mutations
-│ ├── pages/ # Next.js pages
-│ ├── store/ # Zustand store for state management
-│ ├── styles/ # Global and styled-component styles
-│ └── utils/ # Helper functions and constants
-└── _test_/ # Unit and integration tests
-├── components/ # Tests for components
-├── store/ # Tests for the store
+│   ├── components/      # Reusable UI components
+│   ├── graphql/         # GraphQL queries and mutations
+│   ├── pages/           # Next.js pages
+│   ├── store/           # Zustand store for state management
+│   ├── styles/          # Global and styled-component styles
+│   └── utils/           # Helper functions and constants
+├── test/                # Unit and integration tests
+│   ├── components/      # Tests for components
+│   └── store/           # Tests for the store
+```
+
 
 ## API Integration
 
