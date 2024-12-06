@@ -24,30 +24,33 @@ Pokedex App is a Pokémon discovery application where users can explore differen
 
 To get started with the Pokedex App, follow these steps:
 
-```zsh
-
 1. **Install dependencies:**
 
+```zsh
     npm install
+```
 
 2. **Run the development server:**
 
+```zsh
     npm run dev
-
-3. Open the application in your browser: http://localhost:3000
-
-4. **Build for Production**
-    **To build the application for production:**
-
-    npm run build
-
-5. **Testing**
-    **Run tests with the following command:**
-
-    npm test
-
 ```
 
+3. **Open the application in your browser: http://localhost:3000**
+
+4. **Build for Production**
+   **To build the application for production:**
+
+```zsh
+    npm run build
+```
+
+5. **Testing**
+   **Run tests with the following command:**
+
+```zsh
+    npm test
+```
 
 ## Project Structure
 
@@ -65,7 +68,6 @@ pokedex-app/
 │   ├── components/      # Tests for components
 │   └── store/           # Tests for the store
 ```
-
 
 ## API Integration
 
