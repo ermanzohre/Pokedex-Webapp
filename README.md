@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokedex App
+
+Pokedex App is a Pokémon discovery application where users can explore different Pokémon types, view Pokémon details, and analyze their moves' accuracy visually.
+
+## Features
+
+-   **View Pokémon Types**: Displays a list of different Pokémon types.
+-   **Search Feature**: Allows users to search for Pokémon by name.
+-   **Pokémon Details**: Displays details about a Pokémon, including its types and moves' accuracy.
+-   **Responsive Design**: Optimized for both mobile and desktop devices.
+
+## Technologies Used
+
+-   **React.js**: For building the user interface.
+-   **Next.js**: For server-side rendering and routing.
+-   **Apollo Client**: For data fetching and state management via GraphQL.
+-   **Material-UI**: For pre-styled components.
+-   **Styled-Components**: For modular and component-scoped CSS.
+-   **Zustand**: For state management.
+-   **Jest & React Testing Library**: For testing.
+-   **SWC**: For fast testing and build transformations.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Pokedex App, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```zsh
+
+1. **Install dependencies:**
+
+    npm install
+
+2. **Run the development server:**
+
+    npm run dev
+
+3. Open the application in your browser: http://localhost:3000
+
+4. **Build for Production**
+    **To build the application for production:**
+
+    npm run build
+
+5. **Testing**
+    **Run tests with the following command:**
+
+    npm test
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+pokedex-app/
+├── public/ # Static files (favicon, images, etc.)
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── graphql/ # GraphQL queries and mutations
+│ ├── pages/ # Next.js pages
+│ ├── store/ # Zustand store for state management
+│ ├── styles/ # Global and styled-component styles
+│ └── utils/ # Helper functions and constants
+└── _test_/ # Unit and integration tests
+├── components/ # Tests for components
+├── store/ # Tests for the store
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## API Integration
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project uses [PokeAPI GraphQL](https://pokeapi.co/) for fetching Pokémon data.
